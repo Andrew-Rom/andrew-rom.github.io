@@ -37,9 +37,7 @@
 
 .main_menu__bar {
     display: none;
-    position: fixed;
-    top: 75px;
-    right: 0;
+    position: absolute;
     padding: 1rem;
     background-color: #f9f9f9;
     min-width: 232px;
