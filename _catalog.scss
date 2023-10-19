@@ -265,7 +265,7 @@
     .filter-sorter {
         justify-content: space-between;
         align-items: center;
-        padding-top: 26px;
+        padding-top: 24px;
     }
 
     .filter-block {
@@ -274,6 +274,11 @@
 
     .filter {
         padding-left: 0;
+        width: auto;
+
+        &__content {
+            width: calc(100vw - 32px);
+        }
 
         &__title {
             display: none;
@@ -294,11 +299,11 @@
 
     }
 
-    .products {
+    .spec_catalog {
         margin-bottom: 64px;
     }
 
-    .product_items {
+    .product_items_spec {
         margin-top: 16px;
         margin-bottom: 40px;
     }

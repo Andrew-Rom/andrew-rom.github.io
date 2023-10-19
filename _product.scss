@@ -192,15 +192,24 @@ p {
 
 @media (min-width: 320px) and (max-width: 767.98px) {
 
-    .carousel-item,
+    .carousel {
+        padding-top: 85px;
+        padding-bottom: 85px;
+    }
+
+    .carousel-item img,
     .active img{
+        width: 100vw;
+    }
+
+    .carousel-item::after img{
         width: 100vw;
     }
 
     .product_description {
         margin-left: 0;
         margin-right: 0;
-        margin-bottom: 64px;
+        margin-bottom: 0;
     }
 
     .product_text {
@@ -208,8 +217,16 @@ p {
         padding-right: 25px;
     }
 
+    .product_description_line {
+        width: calc(100% - 200px);
+    }
+
     [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
         font-size: 10px;
+    }
+
+    .spec_product_block {
+        margin-bottom: 9px;
     }
 
     .spec_product {
@@ -219,5 +236,6 @@ p {
         grid-auto-rows: 0;
         overflow-y: hidden;
         justify-items: center;
+        gap: 0;
     }
 }
